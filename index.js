@@ -66,7 +66,18 @@ for (let i = 1; i < marks.length; i++) {
     }
 }
 
-console.log("Max Number:", maxNumber);
-console.log("Min Number:", minNumber);
+// console.log("Max Number:", maxNumber);
+// console.log("Min Number:", minNumber);
 
 // console.log(maxNumber, minNumber)
+
+let purchaseHistory = [100, 300, 500, 1000, 700]
+
+let filterHistory = []
+for( let i = 0; i < purchaseHistory.length; i++){
+    const currentHistory = purchaseHistory[i]
+    if( currentHistory <= 300){
+        filterHistory.push(currentHistory)
+    }
+}
+console.log(filterHistory)
