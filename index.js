@@ -48,4 +48,25 @@ for (let i = 0; i < num.length; i++) {
         minNum = currentNum
     }
 }
-console.log(maxNum, minNum)
+// console.log(maxNum, minNum)
+
+// how to get the student top marks
+
+let marks = [33, 80, 34, 44, 100];
+let maxNumber = marks[0]; // Initialize with the first element of the array
+let minNumber = marks[0]; // Initialize with the first element of the array
+
+for (let i = 1; i < marks.length; i++) {
+    const currentNumber = marks[i];
+    if (maxNumber < currentNumber) {
+        maxNumber = currentNumber;
+    }
+    if (minNumber > currentNumber) {
+        minNumber = currentNumber;
+    }
+}
+
+console.log("Max Number:", maxNumber);
+console.log("Min Number:", minNumber);
+
+// console.log(maxNumber, minNumber)
