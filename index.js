@@ -35,3 +35,17 @@ for (let i=0; i < fruits.length; i++) {
 if(foundIndex > -1) {
     console.log(foundIndex, 'found')
 }
+
+const num = [45, 12, 50, 77]
+let maxNum = num[0]
+let minNum = num[0]
+for (let i = 0; i < num.length; i++) {
+    const currentNum = num[i]
+    if(maxNum < currentNum) {
+        maxNum = currentNum
+    }
+    if(minNum > currentNum){
+        minNum = currentNum
+    }
+}
+console.log(maxNum, minNum)
